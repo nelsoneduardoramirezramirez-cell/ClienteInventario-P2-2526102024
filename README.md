@@ -296,14 +296,59 @@ git push origin main
 
 ## Parcial 2 — Consumo de API (completar por el estudiante)
 
-**Nombre:** _________________________________ · **Carnet:** ______________
+**Nombre:** Ramirez Ramirez Nelson Eduardo · **Carnet:** 25-2610-2024
 
 ### Salida de consola (segunda ejecución)
 
 ```
-(pegue aquí la salida completa de la segunda ejecución de Main)
+C:\Users\Nelson\.jdks\temurin-21.0.12.1\bin\java.exe "-javaagent:M:\desarrollo\IntelliJ IDEA 2026.2.1\lib\idea_rt.jar=3795" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath M:\desarrollo\ClienteInventario\target\classes;C:\Users\Nelson\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Nelson\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\Nelson\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\Nelson\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar sv.edu.utec.Main
+Tabla producto lista.
+
+--- Inventario inicial ---
+ID    PRODUCTO                    CANTIDAD
+0     Gucci Bloom Eau de                91
+1     Teclado mecanico                  15
+2     Monitor 24 pulgadas               12
+
+Respaldo generado en inventario.json
+Producto 2 actualizado.
+Producto 1 eliminado.
+
+--- Despues de los cambios ---
+ID    PRODUCTO                    CANTIDAD
+0     Gucci Bloom Eau de                91
+2     Monitor 24 pulgadas               12
+
+Registros restaurados desde JSON: 1
+
+--- Inventario final ---
+ID    PRODUCTO                    CANTIDAD
+0     Gucci Bloom Eau de                91
+1     Teclado mecanico                  15
+2     Monitor 24 pulgadas               12
+
+Sincronizacion con la API -> insertados: 0 | actualizados: 10
+
+--- Inventario sincronizado ---
+ID    PRODUCTO                    CANTIDAD
+0     Gucci Bloom Eau de                91
+1     Teclado mecanico                  15
+2     Monitor 24 pulgadas               12
+
+Process finished with exit code 0
+
 ```
 
 ### Uso de inteligencia artificial
 
-(Declare si utilizó alguna herramienta de IA, cuál y para qué. Si no la utilizó, indíquelo.)
+Sí, utilicé Claude (Anthropic) como herramienta de apoyo durante el desarrollo de este
+examen. La utilicé para:
+
+- Aclarar dudas de sintaxis en Java.
+- Revisar y corregir errores de compilación en las clases ProveedorAPI y SincronizacionService.
+- Verificar que la lógica de sincronización (inserción/actualización idempotente)
+  cumpliera con lo solicitado en el enunciado.
+
+El diseño de las clases, la lógica de negocio y la integración final en Main.java
+fueron implementados y validados por mí, revisando y probando el código en mi propio
+entorno antes de considerarlo terminado.
